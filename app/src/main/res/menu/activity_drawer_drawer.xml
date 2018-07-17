@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_payment"
+        android:title="@string/nav_payment" />
+    <item
+        android:id="@+id/nav_2"
+        android:title="@string/nav_2" />
+    <item
+        android:id="@+id/nav_3"
+        android:title="@string/nav_3" />
+    <item
+        android:id="@+id/nav_4"
+        android:title="@string/nav_4" />
+    <item
+        android:id="@+id/nav_waiver"
+        android:title="@string/waiver" />
+    <item
+        android:id="@+id/nav_help"
+        android:title="@string/help" />
+    <item
+        android:id="@+id/nav_setting"
+        android:title="@string/settings" />
+
+</menu>

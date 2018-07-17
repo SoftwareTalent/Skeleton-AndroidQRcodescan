@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Skeleton</string>
+    <string name="home_title">Home</string>
+    <string name="waiver_title">Waiver</string>
+    <string name="payment_title">Payment</string>
+
+    <string name="location_permission_err_msg">You should allow location permission in order to use this app</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_payment">Payment</string>
+    <string name="nav_2">Nav 2</string>
+    <string name="nav_3">Nav 3</string>
+    <string name="nav_4">Nav 4</string>
+    <string name="waiver">Waiver</string>
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+
+    <string name="accept_waiver_label">Please read following carefully and accept in order to use the app</string>
+    <string name="accepted_waiver_label">Waiver accepted on: %1$s</string>
+    <string name="accept_waiver_btn">Accept</string>
+
+    <string name="billing_history">Billing history</string>
+    <string name="item_bill">Billed $%1$.2f on %2$s</string>
+
+    <string name="notif_channel_name">Skeleton Billing Calculator</string>
+    <string name="notif_channel_desc">Notify about current billing tariff</string>
+
+    <string name="notification_title">Billing Calculator</string>
+    <string name="notification_text">Current value: $%1$.2f</string>
+    <string name="notification_text_paused">Current value: $%1$.2f (PAUSED)</string>
+    <string name="paused">Paused</string>
+    <string name="stop">Stop</string>
+
+</resources>
