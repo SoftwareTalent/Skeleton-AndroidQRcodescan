@@ -7,10 +7,13 @@ import com.luke.skeleton.base.storage.ObservableLocalStorage;
 import com.luke.skeleton.model.Bill;
 import com.luke.skeleton.utils.DateUtils;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Function;
 
 public class BillDataProvider {
 
@@ -40,7 +43,23 @@ public class BillDataProvider {
     private BillDataProvider() {}
 
     public Observable<List<Bill>> getBills() {
-        return billStorage.getData().observeOn(AndroidSchedulers.mainThread());
+        return billStorage.getData()
+                .map(new Function<List<Bill>, List<Bill>>() {
+
+                    @Override
+                    public List<Bill> apply(List<Bill> bills) throws Exception {
+                        Collections.sort(bills, new Comparator<Bill>() {
+
+                            @Override
+                            public int compare(Bill o1, Bill o2) {
+                                return o2.getDate().compareTo(o1.getDate());
+                            }
+                        });
+
+                        return bills;
+                    }
+                })
+                .observeOn(AndroidSchedulers.mainThread());
     }
 
     public Observable<PaymentMethodType> getPaymentMethod() {

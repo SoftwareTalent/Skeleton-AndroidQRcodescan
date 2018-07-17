@@ -22,6 +22,7 @@ public class AcceptWaiverActivity extends BaseActivity {
             return;
         }
         setContentView(R.layout.activity_accept_waiver);
+        setTitle(R.string.waiver_title);
 
         findViewById(R.id.btn_accept).setOnClickListener(new OnClickListener() {
 
