@@ -27,6 +27,9 @@
     <string name="notif_channel_name">Skeleton Billing Calculator</string>
     <string name="notif_channel_desc">Notify about current billing tariff</string>
 
+    <string name="current_card">Current Payment Method: %1$s</string>
+    <string name="change_payment_method">Change Payment Method</string>
+
     <string name="notification_title">Billing Calculator</string>
     <string name="notification_text">Current value: $%1$.2f</string>
     <string name="notification_text_paused">Current value: $%1$.2f (PAUSED)</string>

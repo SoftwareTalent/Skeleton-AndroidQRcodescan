@@ -1,5 +1,9 @@
 package com.luke.skeleton.features.viewmodel;
 
+import android.databinding.Bindable;
+
+import com.braintreepayments.api.dropin.utils.PaymentMethodType;
+import com.luke.skeleton.BR;
 import com.luke.skeleton.base.viewmodel.BaseViewModel;
 import com.luke.skeleton.model.Bill;
 import com.luke.skeleton.storage.BillDataProvider;
@@ -17,6 +21,8 @@ public class PaymentViewModel extends BaseViewModel {
     private IView view;
     private BillDataProvider billDataProvider;
 
+    private PaymentMethodType paymentMethodType;
+
     public PaymentViewModel(IView view, BillDataProvider billDataProvider) {
         this.view = view;
         this.billDataProvider = billDataProvider;
@@ -32,6 +38,23 @@ public class PaymentViewModel extends BaseViewModel {
                 view.updateBillHistory(bills);
             }
         }));
+        addDisposable(billDataProvider.getPaymentMethod().subscribe(new Consumer<PaymentMethodType>() {
+
+            @Override
+            public void accept(PaymentMethodType type) throws Exception {
+                paymentMethodType = type;
+                notifyPropertyChanged(BR.paymentMethod);
+            }
+        }));
+    }
+
+    @Bindable
+    public String getPaymentMethod() {
+        return paymentMethodType != null ? paymentMethodType.getCanonicalName() : "";
+    }
+
+    public void onPaymentMethodChanged(PaymentMethodType paymentMethod) {
+        billDataProvider.setPaymentMethod(paymentMethod);
     }
 
 }
