@@ -2,18 +2,17 @@
     <string name="app_name">Skeleton</string>
     <string name="home_title">Home</string>
     <string name="waiver_title">Waiver</string>
-    <string name="payment_title">Payment</string>
+    <string name="payment_title">Billing</string>
 
     <string name="location_permission_err_msg">You should allow location permission in order to use this app</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="nav_payment">Payment</string>
-    <string name="nav_2">Nav 2</string>
-    <string name="nav_3">Nav 3</string>
-    <string name="nav_4">Nav 4</string>
-    <string name="waiver">Waiver</string>
+    <string name="nav_payment">Billing</string>
+    <string name="nav_2">How to use</string>
+    <string name="nav_3">QR Scaanner</string>
+     <string name="waiver">Waiver</string>
     <string name="help">Help</string>
     <string name="settings">Settings</string>
 

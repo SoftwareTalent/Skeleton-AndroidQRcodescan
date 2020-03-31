@@ -12,9 +12,7 @@
     <item
         android:id="@+id/nav_3"
         android:title="@string/nav_3" />
-    <item
-        android:id="@+id/nav_4"
-        android:title="@string/nav_4" />
+
     <item
         android:id="@+id/nav_waiver"
         android:title="@string/waiver" />

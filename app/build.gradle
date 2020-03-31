@@ -27,6 +27,7 @@ dependencies {
     implementation 'com.android.support:design:27.0.0'
     implementation 'com.google.android.gms:play-services-maps:15.0.1'
     implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
 
     implementation 'net.danlew:android.joda:2.9.9.1'
     implementation 'com.google.code.gson:gson:2.8.5'

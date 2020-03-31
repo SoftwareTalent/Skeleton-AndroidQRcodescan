@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:text="@string/accept_waiver_btn"
         android:layout_gravity="center_horizontal"
+        android:background="@color/colorButton"
         android:layout_margin="8dp"/>
 
 </LinearLayout>

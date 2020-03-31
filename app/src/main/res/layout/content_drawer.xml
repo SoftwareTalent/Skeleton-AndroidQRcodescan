@@ -5,13 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/map"
         tools:context=".features.HomeActivity"
-        android:name="com.google.android.gms.maps.SupportMapFragment" />
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/txt_subtitle"/>
 
+    <TextView
+        android:id="@+id/txt_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Select a Scooter"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:textSize="20sp"/>
+</RelativeLayout>
 </FrameLayout>
